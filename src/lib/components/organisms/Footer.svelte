@@ -39,7 +39,7 @@
 			align-items: center;
 			justify-content: center;
 			gap: 15px;
-			font-weight: 600;
+			font-weight: 700;
 			text-align: center;
 
 			.credits {
