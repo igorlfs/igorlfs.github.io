@@ -58,3 +58,4 @@ Favicons are located in the `static/favicons` folder. I like to use [Real Favico
 ## Social Media Link Preview
 
 You probably want to customize how links to your website look when posted on social media/messaging apps. To do that, you can edit the info in `src/lib/data/meta.ts`. There, you can edit the site's title, description, tags (used by search engines) and the image that appears when sharing a link.
+
