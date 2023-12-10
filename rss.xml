@@ -1,0 +1,174 @@
+
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+>
+  <channel>
+    <atom:link href="https://igorlfs.github.io//rss.xml" rel="self" type="application/rss+xml" />
+    <title>SvelteKit Static Blog Template</title>
+    <link>https://igorlfs.github.io/</link>
+    <description>A light, neat, and easy-to-use SvelteKit template for your next website.</description>
+    <image>
+      <url>https://igorlfs.github.io//favicons/favicon-32x32.png</url>
+      <title>SvelteKit Static Blog Template</title>
+      <link>https://igorlfs.github.io/</link>
+      <width>32</width>
+      <height>32</height>
+    </image>
+    
+        <item>
+          <guid>https://igorlfs.github.io//customization</guid>
+          <title>How to Customize this Template</title>
+          <description>How to customize what you're seeing here and make it your own.</description>
+          <link>https://igorlfs.github.io//customization</link>
+          <pubDate>Sat, 22 Apr 2023 18:55:27 -0300</pubDate>
+          <category>Documentation</category>
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://igorlfs.github.io//customization">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <p>In general, content can be modified by editing the <strong>organisms</strong> and the pages themselves. Below is a list of the most common changes that you may want to make.</p>
+<h2 id="domainsite-url"><a class="heading-link" title="Permalink" aria-hidden="true" href="#domainsite-url"><span>#</span></a>Domain/site URL</h2>
+<p>The first thing you might want to do is replace the domain of of the site with your own. There are two places where you need to do that:</p>
+<ul><li>In the <code>package.json</code> file, check the <code>postbuild</code> script. Change the domain there to your own, so it ends up like this: <code>svelte-sitemap --domain https://your-domain.com</code>. This is used to generate the sitemap of your website, which is used by search engines to index your site.</li>
+<li>In the <code>src/lib/data/meta.ts</code> file, change the <code>siteBaseUrl</code> property to your own domain. This is used in multiple parts of the app wherever the site needs to link to itself.</li></ul>
+<h2 id="headersite-logo"><a class="heading-link" title="Permalink" aria-hidden="true" href="#headersite-logo"><span>#</span></a>Header/site logo</h2>
+<p>To replace the logo that appears in the header, modify or replace the contents of the <code>Logo.svelte</code> atom.</p>
+<p>The links that appear on the header can be modified directly in the <code>Header.svelte</code> organism.</p>
+<h2 id="hero-section"><a class="heading-link" title="Permalink" aria-hidden="true" href="#hero-section"><span>#</span></a>Hero section</h2>
+<p>The hero section is the first section of the site’s home page. It is composed of a Heading, the <em>intro</em> text, and a list of buttons/CTAs. The contents of this section can be modified directly in the <code>Hero.svelte</code> organism.</p>
+<h2 id="about-section"><a class="heading-link" title="Permalink" aria-hidden="true" href="#about-section"><span>#</span></a>About section</h2>
+<p>The about section contains another headline, a paragraph of text, some social media links, and optionally an image. The contents of this section can be modified directly in the <code>About.svelte</code> organism.</p>
+<h2 id="social-links"><a class="heading-link" title="Permalink" aria-hidden="true" href="#social-links"><span>#</span></a>Social Links</h2>
+<p>The social links are contained in the <code>Socials.svelte</code> molecule and can be used in any page. This template shows them on the About section and in the Footer.</p>
+<h2 id="footer"><a class="heading-link" title="Permalink" aria-hidden="true" href="#footer"><span>#</span></a>Footer</h2>
+<p>The footer contains some credits, a list of social links, and the RSS/Theme toggle. The contents of this section can be modified directly in the <code>Footer.svelte</code> organism.</p>
+<h2 id="colors"><a class="heading-link" title="Permalink" aria-hidden="true" href="#colors"><span>#</span></a>Colors</h2>
+<p>You can change the color palette of the website just by tweaking the <code>_themes.scss</code> file. The file uses the <code>define-color</code> scss function to automatically set the color variables in Hex, RGB and HSL formats, so you can choose whichever format you need.</p>
+<p>The main theme colors (primary and secondary) have two variants: shade and tint. The shade is a lighter version of the color (darker in dark mode), and the tint should almost match the page’s background, so that in light mode, it’s really bright, and in dark mode, it’s really dark.</p>
+<h2 id="fonts"><a class="heading-link" title="Permalink" aria-hidden="true" href="#fonts"><span>#</span></a>Fonts</h2>
+<p>This template uses the Inter, Merriweather and Ubuntu Mono font families. You can change the font family by editing the <code>_variables.scss</code> file, and the code is already set up to accept a default font, a heading font, and a monospace font.</p>
+<p>I recommend using <a href="https://fontsource.org/" rel="nofollow">Fontsource</a> to import the fonts you need, or self-hosting them. In case you’re using Fontsource, you can import the fonts in <code>global.scss</code> file to make sure they’re available in the entire site.</p>
+<h2 id="favicon"><a class="heading-link" title="Permalink" aria-hidden="true" href="#favicon"><span>#</span></a>Favicon</h2>
+<p>Favicons are located in the <code>static/favicons</code> folder. I like to use <a href="https://realfavicongenerator.net" rel="nofollow">Real Favicon Generator</a> to generate mine, but you can use any other tool you like. I wrote <a href="https://fantinel.dev/fixing-favicons" rel="nofollow">a blog post about Favicons</a> in case you want to learn more about them.</p>
+<h2 id="social-media-link-preview"><a class="heading-link" title="Permalink" aria-hidden="true" href="#social-media-link-preview"><span>#</span></a>Social Media Link Preview</h2>
+<p>You probably want to customize how links to your website look when posted on social media/messaging apps. To do that, you can edit the info in <code>src/lib/data/meta.ts</code>. There, you can edit the site’s title, description, tags (used by search engines) and the image that appears when sharing a link.</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://igorlfs.github.io///images/posts/customization.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://igorlfs.github.io///images/posts/customization.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://igorlfs.github.io//project-structure</guid>
+          <title>Project Structure</title>
+          <description>How code and structure are organized.</description>
+          <link>https://igorlfs.github.io//project-structure</link>
+          <pubDate>Sat, 22 Apr 2023 18:55:21 -0300</pubDate>
+          <category>Documentation</category>
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://igorlfs.github.io//project-structure">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <p>This project follows the basic <a href="https://kit.svelte.dev/docs/project-structure" rel="nofollow">SvelteKit structure</a>, with some added conventions to make customization a post-management easier.</p>
+<h2 id="components"><a class="heading-link" title="Permalink" aria-hidden="true" href="#components"><span>#</span></a>Components</h2>
+<p>The components are organized following the <a href="https://medium.com/@WeAreMobile1st/atomic-design-getting-started-916bc81bad0e" rel="nofollow">Atomic Design</a> principles, albeit somewhat simplified. Components are in the <code>src/lib/components</code> folder, and are organized in the following way:</p>
+<h3 id="atoms"><a class="heading-link" title="Permalink" aria-hidden="true" href="#atoms"><span>#</span></a>Atoms</h3>
+<p>Atoms are the most basic components, which can be seen as building blocks for other components. They’re small and self-contained, and do only one thing. Examples of atoms are buttons, inputs, and tags.</p>
+<h3 id="molecules"><a class="heading-link" title="Permalink" aria-hidden="true" href="#molecules"><span>#</span></a>Molecules</h3>
+<p>Molecules are groups of atoms that work together to form a more complex component. Examples of molecules are cards, groups of links, or an alert callout.</p>
+<h3 id="organisms"><a class="heading-link" title="Permalink" aria-hidden="true" href="#organisms"><span>#</span></a>Organisms</h3>
+<p>Organisms, in this project, are code blocks that represent a section of a page, such as the header, footer and hero section. They can be used directly in a page as a sort of building block, so the page’s code can be as simple as this:</p>
+<div class="code-block svelte-1pkpsrg"><div class="filename svelte-1pkpsrg">+page.svelte</div>
+	<div class="lang svelte-1pkpsrg">html</div>
+	<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Header</span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Hero</span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>About</span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Footer</span> <span class="token punctuation">/></span></span></code><!-- HTML_TAG_END --></pre>
+</div>
+<h2 id="component-gallery"><a class="heading-link" title="Permalink" aria-hidden="true" href="#component-gallery"><span>#</span></a>Component Gallery</h2>
+<p>This project uses <a href="https://histoire.dev" rel="nofollow">Histoire</a> to be able to see and develop components in isolation. To open it, run <code>npm run story:dev</code>. This way you can customize and build new components with placeholder content and without worrying about where to put them in a page.</p>
+<h2 id="pages"><a class="heading-link" title="Permalink" aria-hidden="true" href="#pages"><span>#</span></a>Pages</h2>
+<p>Pages obey the default SvelteKit structure, but can be summarized as follows:</p>
+<ul><li>There are two different file types: the pages (<code>+page.svelte</code>) and the layouts (<code>+layout.svelte</code>). Layouts are a way to reuse the same structure between different pages without having to duplicate code;</li>
+<li>There are two different page layouts in this site: the “Waves” layout, which all pages inside the <code>(waves)</code> folder use, and the “Blog Article” layout, which all pages inside the <code>(blog-article)</code> folder use;</li></ul>
+<h2 id="blog-posts"><a class="heading-link" title="Permalink" aria-hidden="true" href="#blog-posts"><span>#</span></a>Blog Posts</h2>
+<p>To know how blog posts work and how to create new ones, check out <a href="/blog-posts">How Blog Posts Work</a>.</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://igorlfs.github.io///images/posts/project-structure.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://igorlfs.github.io///images/posts/project-structure.jpg"/>          
+        </item>
+      
+        <item>
+          <guid>https://igorlfs.github.io//blog-posts</guid>
+          <title>How Blog Posts Work</title>
+          <description>How to manage existing blog posts and create new ones</description>
+          <link>https://igorlfs.github.io//blog-posts</link>
+          <pubDate>Sat, 22 Apr 2023 18:55:15 -0300</pubDate>
+          <category>Documentation</category>
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://igorlfs.github.io//blog-posts">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <p>All blog posts are located inside the <code>src/routes/(blog-article)</code> folder. Each folder inside it represents a blog post, and each folder has a <code>+page.md</code> file, which is the file that contains the post’s content.</p>
+<p>This way, the URL for each blog post is generated with the folder’s name. For example, the folder <code>src/routes/(blog-article)/how-blog-posts-work</code> will generate the URL <code>https://mysite.com/how-blog-posts-work</code>.</p>
+<p>All posts are Markdown files, which means you can use the <a href="https://www.markdownguide.org/basic-syntax" rel="nofollow">Markdown syntax</a> in them, and it will work out of the box. However, since this projects uses <a href="https://mdsvex.pngwn.io/" rel="nofollow">MDsveX</a> to parse Markdown, you can also use Svelte components inside them! This means that the components used in other pages can also be used in blog posts.</p>
+<div class="callout-block info svelte-sxx0n0"><div class="icon-wrapper svelte-sxx0n0"><svg width="100%" height="100%" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 11.5V16.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 7.51L12.01 7.49889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+	This is a Svelte component inside a Markdown file!
+
+</div>
+<h2 id="processing"><a class="heading-link" title="Permalink" aria-hidden="true" href="#processing"><span>#</span></a>Processing</h2>
+<p>Besides the blog post page itself, the blog posts can be displayed in other places, such as the <code>/blog</code> page, which lists all blog posts, and the <code>&lt;RecentPosts&gt;</code> component, used in the home page.</p>
+<p>To be able to do that, posts are processed in the <code>src/lib/data/blog-posts/index.ts</code> file. That file imports the blog post files and processes them, so we’re able to use some of the post’s metadata to list them. For example, we get the post’s title, cover image, and calculate the reading time based on its content, so that information is displayed in the blog post cards in the <code>/blog</code> page.</p>
+<p>There is also some basic logic to get related posts based on a post’s tags. The logic should be straightforward enough to modify it to your needs.</p>
+<h2 id="creating-a-new-post"><a class="heading-link" title="Permalink" aria-hidden="true" href="#creating-a-new-post"><span>#</span></a>Creating a new post</h2>
+<p>To create a new post, create a new folder inside the <code>src/routes/(blog-article)</code> folder, and inside it, create a <code>+page.md</code> file. The folder name will be used as the post’s URL slug, so make sure it’s a valid URL slug.</p>
+<p>Inside the <code>+page.md</code> file, you must start with the front matter, which is a YAML-like syntax that is used to define metadata for the post. The front matter must be the first thing in the file, and must be separated from the rest of the content by three dashes (<code>---</code>). An example of a front matter is:</p>
+<div class="code-block svelte-1pkpsrg">
+	<div class="lang svelte-1pkpsrg">markdown</div>
+	<pre class="language-md"><!-- HTML_TAG_START --><code class="language-md"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">slug: my-new-blog-post
+title: My New Blog Post
+date: 2023-04-22T20:45:25.350Z
+excerpt: A short description of the post
+coverImage: /images/posts/cover-image.jpg
+tags:
+  - Example</span>
+<span class="token punctuation">---</span></span></code><!-- HTML_TAG_END --></pre>
+</div>
+<h2 id="managing-blog-posts"><a class="heading-link" title="Permalink" aria-hidden="true" href="#managing-blog-posts"><span>#</span></a>Managing blog posts</h2>
+<p>I highly recommend the <a href="https://frontmatter.codes/" rel="nofollow">Front Matter VS Code extension</a> to manage blog posts. It gives you a nice CMS-like UI to manage the front matter of all blog posts, as well as a preview of their content. It is, of course, optional, and you can manage everything directly in the Markdown files if you prefer.</p>
+<img srcset="/images/posts/frontmatter-preview-dashboard.avif, /images/posts/frontmatter-preview-dashboard.webp, /images/posts/frontmatter-preview-dashboard.png" src="/images/posts/frontmatter-preview-dashboard.png" alt="Screenshot of the Front Matter VS Code extension, showing the dashboard with all posts" loading="lazy" decoding="async" class="svelte-1ykl0dj full-bleed">
+<img srcset="/images/posts/frontmatter-preview-edit.avif, /images/posts/frontmatter-preview-edit.webp, /images/posts/frontmatter-preview-edit.png" src="/images/posts/frontmatter-preview-edit.png" alt="Screenshot of the Front Matter VS Code extension, showing the post editing UI" loading="lazy" decoding="async" class="svelte-1ykl0dj full-bleed">
+<h2 id="rss"><a class="heading-link" title="Permalink" aria-hidden="true" href="#rss"><span>#</span></a>RSS</h2>
+<p>This template automatically generates a RSS feed of your blog posts. It is generated in the <code>src/routes/rss.xml/+server.ts</code> file, and it is available at the <code>/rss.xml</code> URL.</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://igorlfs.github.io///images/posts/blog-posts.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://igorlfs.github.io///images/posts/blog-posts.jpg"/>          
+        </item>
+      
+  </channel>
+</rss>

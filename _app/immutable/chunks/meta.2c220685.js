@@ -1,0 +1,1 @@
+const t="https://igorlfs.github.io/",e=["Svelte","SvelteKit","Template","Blog","Starter","Static Site"],s="A light, neat, and easy-to-use SvelteKit template for your next website.",i="SvelteKit Static Blog Template",a=`${t}/images/site-preview.png`;export{s as d,a as i,e as k,t as s,i as t};
