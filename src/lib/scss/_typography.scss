@@ -18,8 +18,9 @@ a {
 
 strong,
 b {
-	font-weight: 600;
+	font-weight: 700;
 }
+
 em,
 i {
 	font-style: italic;
@@ -37,12 +38,12 @@ h1 {
 
 h2 {
 	font-size: 1.8rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 h3 {
 	font-size: 1.5rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 h4 {
@@ -60,4 +61,5 @@ h4,
 h5 {
 	font-family: var(--font--title);
 }
+
 // #endregion

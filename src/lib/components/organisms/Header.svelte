@@ -63,6 +63,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
+			font-family: var(--font--title);
 			gap: 30px;
 
 			a {
