@@ -20,6 +20,7 @@
 		"vercel-build": "npm run build && npm run vercel-sitemap && npm run vercel-optimize-images"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "1.4.1",
 		"@histoire/plugin-svelte": "^0.16.1",
 		"@sveltejs/adapter-static": "^2.0.1",
 		"@sveltejs/kit": "^1.0.0",
@@ -46,8 +47,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/inter": "^4.5.15",
-		"@fontsource/merriweather": "^4.5.14",
-		"@fontsource/ubuntu-mono": "^4.5.11"
+		"@fontsource/iosevka": "^5.0.7",
+		"@fontsource/roboto": "^5.0.8",
+		"@fontsource/roboto-condensed": "^5.0.14"
 	}
 }
