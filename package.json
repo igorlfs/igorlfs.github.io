@@ -10,23 +10,26 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
+		"deploy": "npx gh-pages -d build -t true",
 		"story:dev": "histoire dev",
 		"story:build": "histoire build",
 		"story:preview": "histoire preview",
 		"optimize-images": "image-transmutation --run --sourceFolder './build/images' --targetFolder './build/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
-		"postbuild": "npm run optimize-images && svelte-sitemap --domain https://sveltekit-static-blog-template.vercel.app/",
+		"postbuild": "npm run optimize-images && svelte-sitemap --domain https://igorlfs.github.io/",
 		"vercel-sitemap": "svelte-sitemap --out-dir .vercel/output/static --domain https://sveltekit-static-blog-template.vercel.app/",
 		"vercel-optimize-images": "image-transmutation --run --sourceFolder '.vercel/output/static/images' --targetFolder '.vercel/output/static/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
 		"vercel-build": "npm run build && npm run vercel-sitemap && npm run vercel-optimize-images"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "1.4.1",
 		"@histoire/plugin-svelte": "^0.16.1",
-		"@sveltejs/adapter-static": "^2.0.1",
+		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.0.0",
 		"dateformat": "^5.0.3",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"gh-pages": "^6.1.0",
 		"histoire": "^0.16.1",
 		"image-transmutation": "^0.1.2",
 		"mdsvex": "^0.10.6",
@@ -46,8 +49,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/inter": "^4.5.15",
-		"@fontsource/merriweather": "^4.5.14",
-		"@fontsource/ubuntu-mono": "^4.5.11"
+		"@fontsource/iosevka": "^5.0.7",
+		"@fontsource/roboto": "^5.0.8",
+		"@fontsource/roboto-condensed": "^5.0.14"
 	}
 }
