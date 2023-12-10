@@ -1,14 +1,9 @@
 <script>
-	import FooterWave from '$lib/icons/footer-wave.svelte';
 	import Socials from '$lib/components/molecules/Socials.svelte';
 	import ThemeToggle from '$lib/components/molecules/ThemeToggle.svelte';
-	import RssLink from '$lib/components/atoms/RssLink.svelte';
 </script>
 
 <footer>
-	<div class="wave">
-		<FooterWave />
-	</div>
 	<div class="content">
 		<div class="copyright">
 			This template was built by <a
@@ -25,7 +20,6 @@
 		</div>
 		<div class="socials">
 			<Socials />
-			<RssLink />
 			<ThemeToggle />
 		</div>
 	</div>
@@ -33,7 +27,7 @@
 
 <style lang="scss">
 	footer {
-		height: 340px;
+		height: 140px;
 		width: 100%;
 		background: linear-gradient(60deg, var(--color--waves-start) 0%, var(--color--waves-end) 100%);
 		display: grid;
