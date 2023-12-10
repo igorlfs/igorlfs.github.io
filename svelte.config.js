@@ -12,7 +12,10 @@ const config = {
     kit: {
         adapter: adapter(),
         prerender: {
-            handleHttpError: 'warn'
+            handleHttpError: 'warn',
+            paths: {
+                base: process.env.NODE_ENV === 'production' ? '/igorlfs.github.io' : '',
+            }
         }
     },
     preprocess: [
