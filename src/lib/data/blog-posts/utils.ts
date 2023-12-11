@@ -6,9 +6,9 @@ import Prism from 'prismjs';
 // is not removed automatically on build
 const ifYouRemoveMeTheBuildFails = Prism;
 import 'prism-svelte';
-import readingTime from 'reading-time/lib/reading-time';
 import striptags from 'striptags';
 import type { BlogPost } from '$lib/utils/types';
+import readingTime from 'reading-time';
 
 export const importPosts = (render = false) => {
 	const blogImports = import.meta.glob('$routes/*/*/*.md', { eager: true });
