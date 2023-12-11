@@ -2,7 +2,7 @@
 
 @mixin base-theme {
 	@include define-color('primary', #6E29E7);
-	@include define-color('primary-shade', #b28cf2);	
+	@include define-color('primary-shade', #b28cf2);
 	@include define-color('primary-tint', #f9f6fe);
 
 	@include define-color('secondary', #ff571a);
@@ -45,37 +45,37 @@
 }
 
 @mixin dark-theme {
-	@include define-color('primary', #9f67ff);
-	@include define-color('primary-shade', #4612A1);	
+	@include define-color('primary', #cba6f7);
+	@include define-color('primary-shade', #8839ef);
 	@include define-color('primary-tint', #231934);
 
-	@include define-color('secondary', #ff723f);
-	@include define-color('secondary-shade', #AB3307);
+	@include define-color('secondary', #fab387);
+	@include define-color('secondary-shade', #fe640b);
 	@include define-color('secondary-tint', #1b1918);
 
-	@include define-color('yellow', #ffd400);
+	@include define-color('yellow', #f9e2af);
 
-	@include define-color('text', #ffffff);
-	@include define-color('text-shade', #9eb4b5);
-	@include define-color('text-inverse', #1c1e26);
-	@include define-color('text-inverse-shade', #5d5f65);
+	@include define-color('text', #cdd6f4);
+	@include define-color('text-shade', #b4befe);
+	@include define-color('text-inverse', #4c4f69);
+	@include define-color('text-inverse-shade', #585b70);
 
-	@include define-color('page-background', #1c1e26);
-	@include define-color('post-page-background', #141519);
-	@include define-color('card-background', #32343e);
+	@include define-color('page-background', #1e1e2e);
+	@include define-color('post-page-background', #1e1e2e);
+	@include define-color('card-background', #313244);
 
 	// Used for Callout component
-	@include define-color('callout-background', #1c1e26);
-	@include define-color('callout-background--info', #1d3874);
-	@include define-color('callout-accent--info', #6ca9f7);
-	@include define-color('callout-background--warning', #724413);
-	@include define-color('callout-accent--warning', #ffca39);
-	@include define-color('callout-background--error', #7c1d20);
-	@include define-color('callout-accent--error', #ff8082);
-	@include define-color('callout-background--success', #004737);
-	@include define-color('callout-accent--success', #00c48f);
+	@include define-color('callout-background', #181825);
+	@include define-color('callout-background--info', #1e66f5);
+	@include define-color('callout-accent--info', #89b4fa);
+	@include define-color('callout-background--warning', #df8e1d);
+	@include define-color('callout-accent--warning', #f9e2af);
+	@include define-color('callout-background--error', #d20f39);
+	@include define-color('callout-accent--error', #f38ba8);
+	@include define-color('callout-background--success', #40a02b);
+	@include define-color('callout-accent--success', #a6e3a1);
 
-	@include define-color('code-inline-background', #2b3131);
+	@include define-color('code-inline-background', #11111b);
 }
 
 :root {
