@@ -17,9 +17,14 @@ jobs:
         run: npm install
       - name: Build site
         run: npm run build
+      - name: Setup SSH
+        uses: MrSquaare/ssh-setup-action@v3
+        with:
+          host: github.com
+          private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Deploy with gh-pages
         run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/igorlfs/igorlfs.github.io.git
+          git remote set-url origin git@github.com:igorlfs/igorlfs.github.io.git
           npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
