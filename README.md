@@ -1,6 +1,6 @@
 # Blog
 
-The source code for my website :)
+The source code for my website.
 
 ## Credits
 
