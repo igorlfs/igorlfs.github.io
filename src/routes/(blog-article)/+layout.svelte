@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Header from '$lib/components/organisms/Header.svelte';
-	import Footer from '$lib/components/organisms/Footer.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
 	import dateformat from 'dateformat';
 
@@ -84,8 +83,6 @@
 			</div>
 		{/if}
 	</main>
-
-	<Footer />
 </div>
 
 <style lang="scss">
