@@ -1,6 +1,7 @@
 <script lang="ts">
 	import BlogPostCard from '$lib/components/molecules/BlogPostCard.svelte';
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
+	import Header from '$lib/components/organisms/Header.svelte';
 	import type { BlogPost } from '$lib/utils/types';
 
 	export let data: {
@@ -10,8 +11,10 @@
 	let { posts } = data;
 </script>
 
+<Header showBackground={true} />
+
 <div class="container">
-	<ContentSection title="All Blog Posts">
+	<ContentSection title="All Posts">
 		<div class="grid">
 			{#each posts as post}
 				<BlogPostCard

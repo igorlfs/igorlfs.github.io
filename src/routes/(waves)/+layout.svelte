@@ -1,7 +1,4 @@
 <script>
-	import Waves from '$lib/components/organisms/Waves.svelte';
-	import Header from '$lib/components/organisms/Header.svelte';
-
 	import { description, image, keywords, title, siteBaseUrl } from '$lib/data/meta';
 </script>
 
@@ -22,10 +19,6 @@
 
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
-
-<Waves />
-
-<Header />
 
 <main>
 	<slot />
