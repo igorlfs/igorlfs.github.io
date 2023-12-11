@@ -14,8 +14,7 @@
 		"story:dev": "histoire dev",
 		"story:build": "histoire build",
 		"story:preview": "histoire preview",
-		"optimize-images": "image-transmutation --run --sourceFolder './build/images' --targetFolder './build/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
-		"postbuild": "npm run optimize-images && svelte-sitemap --domain https://igorlfs.github.io/",
+		"postbuild": "svelte-sitemap --domain https://igorlfs.github.io/",
 		"vercel-sitemap": "svelte-sitemap --out-dir .vercel/output/static --domain https://sveltekit-static-blog-template.vercel.app/",
 		"vercel-optimize-images": "image-transmutation --run --sourceFolder '.vercel/output/static/images' --targetFolder '.vercel/output/static/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
 		"vercel-build": "npm run build && npm run vercel-sitemap && npm run vercel-optimize-images"
@@ -32,7 +31,6 @@
 		"eslint-plugin-svelte3": "^4.0.0",
 		"gh-pages": "^6.1.0",
 		"histoire": "^0.16.1",
-		"image-transmutation": "^0.1.2",
 		"mdsvex": "^0.10.6",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
