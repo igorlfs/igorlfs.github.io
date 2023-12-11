@@ -22,14 +22,16 @@
 				{/if}
 			</div>
 		{/if}
+	</div>
+	<div class="content-area">
+		<slot />
+	</div>
+	<div class="button-area">
 		{#if $$slots['button']}
 			<div class="button">
 				<slot name="button" />
 			</div>
 		{/if}
-	</div>
-	<div class="content-area">
-		<slot />
 	</div>
 </section>
 
@@ -41,7 +43,7 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 40px;
-		padding: 50px 0;
+		padding: 35px 0;
 
 		.title-area {
 			flex: 2;
@@ -94,6 +96,10 @@
 				.content-area {
 					order: 2;
 					width: 100%;
+				}
+				.button-area {
+					order: 3;
+					max-width: 600px;
 				}
 			}
 		}

@@ -7,15 +7,7 @@
 	export let posts: BlogPost[];
 </script>
 
-<ContentSection
-	id="recent-posts"
-	title="Blog posts"
-	description="This section shows the 4 most recent blog posts. Check them out for tips on how to get started!"
-	align="left"
->
-	<div slot="button">
-		<Button href="/blog">View More</Button>
-	</div>
+<ContentSection id="recent-posts" title="Recent Posts" align="top">
 	<div class="grid">
 		{#each posts as post}
 			<BlogPostCard
@@ -27,6 +19,10 @@
 				showImage={false}
 			/>
 		{/each}
+	</div>
+
+	<div slot="button">
+		<Button href="/blog">More</Button>
 	</div>
 </ContentSection>
 
