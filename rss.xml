@@ -22,28 +22,5 @@
       <height>32</height>
     </image>
     
-        <item>
-          <guid>https://igorlfs.github.io//TODO</guid>
-          <title>TODO</title>
-          <description>TODO</description>
-          <link>https://igorlfs.github.io//TODO</link>
-          <pubDate>Sun, 10 Dec 2023 21:00:00 -0300</pubDate>
-          <category>Development</category>
-          <content:encoded><![CDATA[
-            <div style="margin: 50px 0; font-style: italic;">
-              If anything looks wrong, 
-              <strong>
-                <a href="https://igorlfs.github.io//TODO">
-                  read on the site!
-                </a>
-              </strong>
-            </div>
-
-            <p>TODO</p>
-          ]]></content:encoded>
-          
-                    
-        </item>
-      
   </channel>
 </rss>
