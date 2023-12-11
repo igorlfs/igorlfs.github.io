@@ -7,23 +7,12 @@
 <section id="about">
 	<div class="info">
 		<h2>
-			This is a catchy headline that
-			<SparklingHighlight color="secondary">sparkles!</SparklingHighlight>
+			Welcome to my
+			<SparklingHighlight color="secondary">fancy</SparklingHighlight>
+			website!
 		</h2>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit voluptatibus commodi
-			autem provident quam labore, libero beatae praesentium voluptate?
-		</p>
-		<div class="socials">
-			<span>Socials:</span>
-			<Socials />
-		</div>
-	</div>
-	<div class="image">
-		<Image
-			src="/images/sample-image.png"
-			alt="Sample for the static template"
-		/>
+		<p>Software Engineer by day and... Software... Engineer... by night. Take a look around :)</p>
+		<Socials />
 	</div>
 </section>
 
@@ -33,7 +22,7 @@
 	#about {
 		position: relative;
 		display: grid;
-		grid-template-columns: 500px 250px;
+		grid-template-columns: 510px 255px;
 		align-items: center;
 		justify-content: space-between;
 		padding-bottom: 50px;
@@ -63,25 +52,6 @@
 			@include for-phone-only {
 				gap: 20px;
 			}
-		}
-
-		.socials {
-			display: flex;
-			align-items: center;
-			gap: 15px;
-
-			@include for-phone-only {
-				justify-content: center;
-				margin-bottom: 10px;
-				span {
-					display: none;
-				}
-			}
-		}
-
-		.image {
-			width: 220px;
-			height: 220px;
 		}
 	}
 </style>
