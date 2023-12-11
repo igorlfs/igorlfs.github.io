@@ -11,7 +11,8 @@
 			<Logo />
 		</a>
 		<div class="links">
-			<a href="/blog">Blog</a>
+			<a href="/blog">Posts</a>
+			<a href="/about">About</a>
 			<ThemeToggle />
 		</div>
 	</nav>

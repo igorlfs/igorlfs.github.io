@@ -12,12 +12,7 @@
 	>
 		<GitHubIcon />
 	</a>
-	<a
-		href="mailto:igorlafarsi@gmail.com"
-		target="_blank"
-		rel="noopener noreferrer"
-		title="Send an email"
-	>
+	<a href="mailto:igorlafarsi@gmail.com" target="_blank" rel="noopener noreferrer" title="Mail">
 		<EmailIcon />
 	</a>
 </div>
