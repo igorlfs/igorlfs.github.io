@@ -23,7 +23,7 @@
 		"@biomejs/biome": "1.4.1",
 		"@histoire/plugin-svelte": "^0.16.1",
 		"@sveltejs/adapter-static": "^2.0.3",
-		"@sveltejs/kit": "^1.0.0",
+		"@sveltejs/kit": "^1.15.2",
 		"@types/dateformat": "^5.0.2",
 		"dateformat": "^5.0.3",
 		"eslint": "^8.28.0",
