@@ -3,10 +3,6 @@
 
     const pages = [
         {
-            title: "Blog",
-            href: "/blog",
-        },
-        {
             title: "About",
             href: "/about",
         },
