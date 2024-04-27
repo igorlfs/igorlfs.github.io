@@ -1,15 +1,21 @@
 <script lang="ts">
     import "../app.scss";
+    import Footer from "../components/Footer.svelte";
+    import Header from "../components/Header.svelte";
     // @ts-ignore
     // npm i blip-ds
     // import { defineCustomElements } from "blip-ds/loader/index.cjs";
     // import { onMount } from "svelte";
 
     // onMount(() => {
-    //     // defineCustomElements(window);
+    // defineCustomElements(window);
     // });
 </script>
 
-<div id="root">
+<Header />
+
+<main>
     <slot />
-</div>
+</main>
+
+<Footer />

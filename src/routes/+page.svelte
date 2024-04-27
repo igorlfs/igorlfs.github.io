@@ -1,13 +1,10 @@
 <script lang="ts">
-    import Footer from "../components/Footer.svelte";
-    import Header from "../components/Header.svelte";
 </script>
 
 <svelte:head>
     <title>Home</title>
 </svelte:head>
 
-<Header />
 
 <div class="text-text pb-8 pt-16 m-6">
     {#each { length: 15 } as _}
@@ -26,5 +23,3 @@
         </p>
     {/each}
 </div>
-
-<Footer />
