@@ -1,1 +1,0 @@
-import{a as m,t as o}from"./disclose-version.AvVJUKAd.js";import{a as s,r as e,p as f}from"./runtime.DJiEXuFG.js";import{s as r}from"./attributes.Bo8Y0asc.js";import{i as p}from"./lifecycle.BjomV2Nu.js";var l=o('<img loading="lazy">');function u(i,a){s(a,!1),p();var t=l();e(()=>{r(t,"src",a.src),r(t,"alt",a.alt)}),m(i,t),f()}export{u as I};
