@@ -1,7 +1,7 @@
 <script lang="ts">
     import "../app.scss";
-    import Footer from "../components/Footer.svelte";
-    import Header from "../components/Header.svelte";
+    import Footer from "$lib/components/Footer.svelte";
+    import Header from "$lib/components/Header.svelte";
     // @ts-ignore
     // npm i blip-ds
     // import { defineCustomElements } from "blip-ds/loader/index.cjs";
