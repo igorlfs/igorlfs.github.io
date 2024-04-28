@@ -1,5 +1,6 @@
 <script lang="ts">
     import { formatDate } from "$lib/utils";
+    import { base } from "$app/paths";
     export let data;
 </script>
 
@@ -13,7 +14,7 @@
         {#each data.posts as post}
             <li class="[&:not(:first-child)]:pt-3 pb-3">
                 <a
-                    href={post.slug}
+                    href="{base}/{post.slug}"
                     class="text-lavender font-bold capitalize text-5xl hoverable-item"
                     >{post.title}</a
                 >

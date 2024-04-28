@@ -1,5 +1,6 @@
 <script>
     import { page } from "$app/stores";
+    import { base } from "$app/paths";
 
     const pages = [
         {
@@ -14,7 +15,10 @@
 
 <nav class="bg-crust p-2">
     <div class="flex xl:px-36 sm:px-16 items-center min-h-10">
-        <a class="font-bold text-xl text-lavender hoverable-item" href="/">
+        <a
+            class="font-bold text-xl text-lavender hoverable-item"
+            href="{base}/"
+        >
             IgorLFS
         </a>
         <ul
@@ -22,7 +26,7 @@
         >
             {#each pages as { title, href }}
                 <a
-                    {href}
+                    href="{base}{href}"
                     class={(href === "/" && routeId === "/") ||
                     url.includes(href)
                         ? "text-lavender"
