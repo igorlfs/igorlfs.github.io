@@ -4,12 +4,7 @@
 
 @import '@fontsource/roboto';
 @import '@fontsource/roboto/700.css';
-
-@layer base {
-    html {
-        font-family: "Roboto", system-ui, sans-serif;
-    }
-}
+@import '@fontsource/fira-code';
 
 @layer utilities {
     .hoverable-item {
@@ -18,7 +13,7 @@
     }
 }
 
-h2 {
+.prose h2 {
     font-size: 30pt;
 }
 
@@ -40,7 +35,7 @@ h2 {
     max-inline-size: 100%;
     padding: 1rem;
     border-radius: 8px;
-    tab-size: 2;
+    tab-size: 4;
 }
 
 .prose img {

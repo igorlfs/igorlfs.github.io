@@ -26,8 +26,11 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/iosevka": "^5.0.11",
+		"@fontsource/fira-code": "^5.0.18",
 		"mdsvex": "^0.11.0",
+		"rehype-slug": "^6.0.0",
+		"remark-toc": "^9.0.0",
+		"remark-unwrap-images": "^4.0.0",
 		"shiki": "^1.3.0"
 	}
 }
