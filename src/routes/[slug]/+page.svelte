@@ -10,8 +10,8 @@
     <meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<div class="text-text pb-8 pt-10 my-10 flex justify-center">
-    <article class="ms-auto me-auto w-[60%]">
+<div class="text-text pb-8 my-10 flex justify-center">
+    <article class="xl:w-[60%] sm:w-[90%]">
         <hgroup>
             <h1 class="capitalize text-5xl font-bold text-lavender">
                 {data.meta.title}
