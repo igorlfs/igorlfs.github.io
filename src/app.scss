@@ -17,3 +17,34 @@
         @apply hover:font-bold;
     }
 }
+
+h2 {
+    font-size: 30pt;
+}
+
+.prose :is(h2, h3, h4, h5, h6) {
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.prose p:not(:is(h2, h3, h4, h5, h6) + p) {
+    margin-top: 14px;
+}
+
+.prose p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.prose pre {
+    max-inline-size: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    tab-size: 2;
+}
+
+.prose img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
