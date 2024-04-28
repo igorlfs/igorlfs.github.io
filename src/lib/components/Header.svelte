@@ -8,8 +8,8 @@
         },
     ];
 
-    $: url = $page.url.href;
-    $: routeId = $page.url.pathname;
+    const url = $derived($page.url.href);
+    const routeId = $derived($page.url.pathname);
 </script>
 
 <nav class="bg-crust p-2">
