@@ -17,6 +17,10 @@
     font-size: 30pt;
 }
 
+.prose h2:hover {
+    color: #89b4fa
+}
+
 .prose :is(h2, h3, h4, h5, h6) {
     margin-top: 12px;
     margin-bottom: 8px;
