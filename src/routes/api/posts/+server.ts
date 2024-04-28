@@ -1,3 +1,4 @@
+export const prerender = true;
 import type { Post } from "$lib/types";
 import { json } from "@sveltejs/kit";
 
