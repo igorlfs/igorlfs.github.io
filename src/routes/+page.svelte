@@ -17,7 +17,9 @@
                     class="text-lavender font-bold capitalize text-5xl hoverable-item"
                     >{post.title}</a
                 >
-                <p class="text-subtext">{formatDate(post.date)}</p>
+                {#if post.date}
+                    <p class="text-subtext">{formatDate(post.date)}</p>
+                {/if}
                 <p class="mt-2">{post.description}</p>
             </li>
         {/each}

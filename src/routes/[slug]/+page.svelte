@@ -16,7 +16,9 @@
             <h1 class="capitalize text-5xl font-bold text-lavender">
                 {data.meta.title}
             </h1>
-            <p class="text-subtext">{formatDate(data.meta.date)}</p>
+            {#if data.meta.date}
+                <p class="text-subtext">{formatDate(data.meta.date)}</p>
+            {/if}
         </hgroup>
 
         <div class="flex gap-4 mt-3">

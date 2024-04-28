@@ -18,8 +18,11 @@ async function getPosts() {
 	}
 
 	posts = posts.sort(
-		(first, second) =>
-			new Date(second.date).getTime() - new Date(first.date).getTime(),
+		(lhs, rhs) =>
+			(rhs.date &&
+				lhs.date &&
+				new Date(rhs.date).getTime() - new Date(lhs.date).getTime()) ||
+			0,
 	);
 
 	return posts;
