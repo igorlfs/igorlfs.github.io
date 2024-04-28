@@ -12,7 +12,7 @@
 }
 
 @layer utilities {
-    .hoverable-list-item {
+    .hoverable-item {
         @apply hover:text-blue;
         @apply hover:font-bold;
     }
