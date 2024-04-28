@@ -1,1 +1,1 @@
-{"type":"data","nodes":[null,{"type":"data","data":[{"posts":1},[]],"uses":{}}]}
+{"type":"data","nodes":[null,{"type":"data","data":[{"posts":1},[2,11,15],{"title":3,"description":4,"date":5,"categories":6,"published":9,"slug":10},"Second","Second post.","2023-4-16",[7,8],"sveltekit","svelte",true,"another",{"title":12,"description":4,"date":5,"categories":13,"published":9,"slug":14},"diwandoaw dwnaiod",[7,8],"more",{"title":16,"description":17,"date":18,"categories":19,"published":9,"slug":20},"First post","First post.","2023-4-14",[7,8],"example"],"uses":{}}]}
