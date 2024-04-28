@@ -5,9 +5,8 @@
 </script>
 
 <svelte:head>
-    <title>Home</title>
+    <title>IgorLFS</title>
 </svelte:head>
-
 
 <section class="text-text pb-8 my-10 flex justify-center">
     <ul class="grid grid-cols-1 divide-y-2 divide-crust xl:w-[60%] sm:w-[90%]">
