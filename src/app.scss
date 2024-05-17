@@ -4,24 +4,27 @@
 
 @import '@fontsource/roboto';
 @import '@fontsource/roboto/700.css';
-@import '@fontsource/fira-code';
+@import '@fontsource/iosevka';
 
-@layer utilities {
-    .hoverable-item {
-        @apply hover:text-blue;
-        @apply hover:font-bold;
-    }
+:root {
+    --primary-color: #b4befe;
+    --accent-color: #89b4fa;
+    --dark-background-color: #11111b;
 }
 
-.prose h2 {
+.prose h1 {
     font-size: 30pt;
 }
 
-.prose h2:hover {
-    color: #89b4fa
+.prose h2 {
+    font-size: 24pt;
 }
 
-.prose :is(h2, h3, h4, h5, h6) {
+.prose h3 {
+    font-size: 18pt;
+}
+
+.prose :is(h1, h2, h3, h4, h5, h6) {
     margin-top: 12px;
     margin-bottom: 8px;
 }
@@ -35,11 +38,33 @@
     text-justify: inter-word;
 }
 
+.prose code {
+    background: var(--dark-background-color);
+    border-radius: 6px;
+    padding: 0px 5px;
+}
+
 .prose pre {
+    background: var(--dark-background-color) !important;
     max-inline-size: 100%;
     padding: 1rem;
     border-radius: 8px;
+    margin: 10px 0px;
     tab-size: 4;
+}
+
+a:link {
+    font-weight: bold;
+    color: var(--primary-color)
+}
+
+a:hover {
+    font-weight: bold;
+    color: var(--accent-color)
+}
+
+.prose hr {
+    margin-top: 20px;
 }
 
 .prose img {

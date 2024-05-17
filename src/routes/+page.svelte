@@ -14,11 +14,11 @@
             <li class="[&:not(:first-child)]:pt-3 pb-3">
                 <a
                     href="{base}/{post.slug}"
-                    class="text-lavender font-bold capitalize text-5xl hoverable-item"
+                    class="text-lavender font-bold capitalize text-4xl"
                     >{post.title}</a
                 >
                 {#if post.date}
-                    <p class="text-subtext">{formatDate(post.date)}</p>
+                    <p class="mt-2 text-subtext">{formatDate(post.date)}</p>
                 {/if}
                 <p class="mt-2">{post.description}</p>
             </li>
