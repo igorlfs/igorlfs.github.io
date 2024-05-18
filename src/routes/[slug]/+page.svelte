@@ -29,7 +29,7 @@
             {/each}
         </div>
 
-        <div class="prose">
+        <div class="prose lg:prose-xl max-w-none">
             <svelte:component this={data.content} />
         </div>
     </article>
