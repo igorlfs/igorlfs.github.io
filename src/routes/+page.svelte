@@ -14,7 +14,7 @@
             <li class="[&:not(:first-child)]:pt-3 pb-3">
                 <a
                     href="{base}/{post.slug}"
-                    class="text-lavender capitalize text-4xl">{post.title}</a
+                    class="text-lavender capitalize text-5xl">{post.title}</a
                 >
                 {#if post.date}
                     <p class="mt-2 text-subtext">{formatDate(post.date)}</p>
