@@ -9,12 +9,13 @@
 </svelte:head>
 
 <section class="text-text pb-8 my-10 flex justify-center">
-    <ul class="grid grid-cols-1 divide-y-2 divide-crust xl:w-[60%] sm:w-[90%]">
+    <ul class="grid grid-cols-1 divide-y-2 divide-crust xl:w-[60%] w-[90%]">
         {#each data.posts as post}
             <li class="[&:not(:first-child)]:pt-3 pb-3">
                 <a
                     href="{base}/{post.slug}"
-                    class="text-lavender capitalize text-5xl">{post.title}</a
+                    class="text-lavender capitalize sm:text-5xl text-3xl"
+                    >{post.title}</a
                 >
                 {#if post.date}
                     <p class="mt-2 text-subtext">{formatDate(post.date)}</p>

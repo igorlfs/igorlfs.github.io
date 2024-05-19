@@ -14,7 +14,7 @@
 </script>
 
 <nav class="bg-crust p-2">
-    <div class="flex xl:px-36 sm:px-16 items-center min-h-10">
+    <div class="flex xl:px-36 sm:px-16 px-4 items-center min-h-10">
         <a class="text-xl text-lavender" href="{base}/"> IgorLFS </a>
         <ul class="flex m-0 ml-auto uppercase">
             {#each pages as { title, href }}
