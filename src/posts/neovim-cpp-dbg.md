@@ -9,7 +9,7 @@ published: true
 ---
 Configuring neovim for C++ (and C) can be a bit tricky, specially when it comes to debugging. Fear not! This guide will cover everything you need to know, provided that you have some basic knowledge with plugin installation.
 
-![Preview](https://github.com/igorlfs/dotfiles/assets/84649544/d0f3fb94-11b0-4bd1-a80e-3d9bf52089d7)
+![Preview](/images/neovim/cpp-dbg.png)
 
 ### Goal
 
