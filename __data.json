@@ -1,1 +1,1 @@
-{"type":"data","nodes":[null,{"type":"data","data":[{"posts":1},[2],{"title":3,"description":4,"date":5,"categories":6,"published":9,"slug":10},"Building and Debugging C++ in Neovim","A modern guide to debugging C++ in nvim","2024-05-19",[7,8],"neovim","software",true,"neovim-cpp-dbg"],"uses":{}}]}
+{"type":"data","nodes":[null,{"type":"data","data":[{"posts":1},[]],"uses":{}}]}
