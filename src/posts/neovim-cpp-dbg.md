@@ -5,7 +5,7 @@ date: "2024-05-19"
 categories:
   - neovim
   - software
-published: false
+published: true
 ---
 Configuring neovim for C++ (and C) can be a bit tricky, specially when it comes to debugging. Fear not! This guide will cover everything you need to know, provided that you have some basic knowledge with plugin installation.
 
