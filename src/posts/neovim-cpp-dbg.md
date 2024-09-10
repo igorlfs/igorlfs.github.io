@@ -37,12 +37,12 @@ Configuring `nvim-dap` is a little different than your average neovim lua plugin
 
 ```lua
 require("dap").adapters.codelldb = {
- type = "server",
- port = "${port}",
- executable = {
-  command = "codelldb",
-  args = { "--port", "${port}" },
- },
+	type = "server",
+	port = "${port}",
+	executable = {
+		command = "codelldb",
+		args = { "--port", "${port}" },
+	},
 }
 ```
 
@@ -59,21 +59,21 @@ Fortunately, we can do better! In vscode, there's a `launch.json` file which con
 
 ```lua
 keys = {
- ...,
- {
-  "<F5>",
-  function()
-   -- (Re-)reads launch.json if present
-   if vim.fn.filereadable(".vscode/launch.json") then
-    require("dap.ext.vscode").load_launchjs(nil, {
-     ["codelldb"] = { "c", "cpp" },
-    })
-   end
-   require("dap").continue()
-  end,
-  desc = "DAP Continue",
- },
- ...,
+	...,
+	{
+		"<F5>",
+		function()
+			-- (Re-)reads launch.json if present
+			if vim.fn.filereadable(".vscode/launch.json") then
+				require("dap.ext.vscode").load_launchjs(nil, {
+					["codelldb"] = { "c", "cpp" },
+				})
+			end
+			require("dap").continue()
+		end,
+		desc = "DAP Continue",
+	},
+	...,
 }
 ```
 
