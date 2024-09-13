@@ -52,32 +52,9 @@ Check the [wiki](https://github.com/mfussenegger/nvim-dap/wiki/C-C---Rust-(via--
 
 If you thought we were done configuring, we're just getting started! Seriously. The next step is to create a configuration to launch the program we want to debug, thus finishing the chain `editor <-> adapter <-> debugger <-> your code`. Similarly to how we defined our adapter, we could define a configuration for C++ -- that's what most people do. But that has several limitations. For instance, if you are working with multiple projects, it would certainly be a pain to switch configurations all the time when switching projects. There are workarounds for this situation -- you could have project local configurations using `:h exrc`. But then, if you wanna change anything in your local config, you'd have to source your file again and so on... That's definitely not that smooth!
 
-Fortunately, we can do better! In vscode, there's a `launch.json` file which contains the current project's debugging configurations. And it just so happens that we can use `nvim-dap` to source this file (see `:h dap.ext.vscode.load_launchjs` for details). Here's a snippet from my config that uses [lazy.nvim](https://github.com/folke/lazy.nvim)'s `keys` property to bind `<F5>` to
+Fortunately, we can do better! In vscode, there's a `launch.json` file which contains the current project's debugging configurations. And it just so happens that we can use `nvim-dap` to source this file (see `:h dap.ext.vscode.load_launchjs` for details). In fact, in recent versions of nvim-dap, this happens automatically!
 
-1. Source a `launch.json`, if it exists (so we can refresh the configuration on the fly)
-2. Resume the current session or start a new one[^3]
-
-```lua
-keys = {
-	...,
-	{
-		"<F5>",
-		function()
-			-- (Re-)reads launch.json if present
-			if vim.fn.filereadable(".vscode/launch.json") then
-				require("dap.ext.vscode").load_launchjs(nil, {
-					["codelldb"] = { "c", "cpp" },
-				})
-			end
-			require("dap").continue()
-		end,
-		desc = "DAP Continue",
-	},
-	...,
-}
-```
-
-Great! We're almost done! Now it'd be a good time to add some other mappings. You can use my [config](https://github.com/igorlfs/dotfiles/blob/main/nvim/.config/nvim/lua/plugins/nvim-dap.lua) as a reference.
+We're almost done! Now it'd be a good time to add some mappings. You can use my [config](https://github.com/igorlfs/dotfiles/blob/main/nvim/.config/nvim/lua/plugins/nvim-dap.lua) as a reference.
 
 ## Building
 
@@ -147,4 +124,3 @@ That's all, folks! Thanks for reading!
 
 [^1]: It actually does, but it isn't a DAP client, so it's very limited in what it supports (though it should be good enough for C++). See `:h terminal-debug`
 [^2]: Requires a recent version of `gdb`
-[^3]: See `:h dap.continue()` for details
