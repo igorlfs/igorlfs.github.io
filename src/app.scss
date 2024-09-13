@@ -7,8 +7,8 @@
 @import '@fontsource/iosevka';
 
 :root {
-    --primary-color: #b4befe;
-    --accent-color: #89b4fa;
+    --primary-color: #89b4fa;
+    --accent-color: #b4befe;
     --dark-background-color: #11111b;
     --text-color: #cdd6f4;
 }
@@ -46,16 +46,15 @@
     color: var(--text-color) !important;
 }
 
-
 a:link {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--accent-color);
     text-decoration: none;
 }
 
 a:hover {
     font-weight: bold;
-    color: var(--accent-color)
+    color: var(--primary-color);
 }
 
 .prose img {

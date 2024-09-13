@@ -3,6 +3,6 @@
 </script>
 
 <div class="h-full my-10 grid place-content-center text-text">
-    <h1 class="text-lavender text-3xl font-bold">{$page.status}</h1>
+    <h1 class="text-primary text-3xl font-bold">{$page.status}</h1>
     <p>{$page.error?.message}</p>
 </div>

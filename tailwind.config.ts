@@ -16,6 +16,8 @@ export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     colors: {
+      primary: lavender,
+      accent: blue,
       text,
       subtext,
       lavender,

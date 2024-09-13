@@ -13,7 +13,7 @@
 <div class="text-text pb-8 my-10 flex justify-center">
     <article class="xl:w-[60%] w-[90%]">
         <hgroup>
-            <h1 class="capitalize sm:text-5xl text-3xl font-bold text-lavender">
+            <h1 class="capitalize sm:text-5xl text-3xl font-bold text-primary">
                 {data.meta.title}
             </h1>
             {#if data.meta.date}
