@@ -58,7 +58,7 @@ We're almost done! Now it'd be a good time to add some mappings. You can use my 
 
 ## Building
 
-It may sound odd to start this guide with the debugging section. An integration that just builds the project sounds way easier. And while that's true, the beauty of our setup is that we can integrate the build process inside a debugging configuration. Here's how it works: there's a field inside the configuration called `preLaunchTask` that runs a vscode task (defined in as `tasks.json` file) before the program is started. That's just perfect for defining a task to build our projects!
+It may sound odd to start this guide with the debugging section. An integration that just builds the project sounds way easier. And while that's true, the beauty of our setup is that we can integrate the build process inside a debugging configuration. Here's how it works: there's a field inside the configuration called `preLaunchTask` that runs a vscode task (defined in a `tasks.json` file) before the program is started. That's just perfect for defining a task to build our projects!
 
 If you're unfamiliar with these files, don't worry, the next section has some examples!
 
