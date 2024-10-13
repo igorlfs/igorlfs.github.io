@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { formatDate } from "$lib/utils";
+    import { formatDate } from '$lib/utils';
 
     export let data;
 </script>
@@ -23,9 +23,7 @@
 
         <div class="flex gap-4 mt-3">
             {#each data.meta.categories as category}
-                <span class="rounded-3xl bg-crust px-3 py-2"
-                    >&num;{category}</span
-                >
+                <span class="rounded-3xl bg-crust px-3 py-2">&num;{category}</span>
             {/each}
         </div>
 

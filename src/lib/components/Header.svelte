@@ -1,11 +1,11 @@
 <script lang="ts">
-    import { base } from "$app/paths";
+    import { base } from '$app/paths';
 
     const pages = [
         {
-            title: "About",
-            href: "/about",
-        },
+            title: 'About',
+            href: '/about'
+        }
     ];
 </script>
 

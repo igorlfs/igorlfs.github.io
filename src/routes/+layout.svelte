@@ -1,7 +1,7 @@
 <script lang="ts">
-    import "../app.scss";
-    import Footer from "$lib/components/Footer.svelte";
-    import Header from "$lib/components/Header.svelte";
+    import '../app.scss';
+    import Footer from '$lib/components/Footer.svelte';
+    import Header from '$lib/components/Header.svelte';
 </script>
 
 <div class="flex flex-col min-h-screen justify-between">
