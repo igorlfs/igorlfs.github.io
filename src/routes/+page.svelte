@@ -1,7 +1,7 @@
 <script lang="ts">
     import { formatDate } from '$lib/utils';
     import { base } from '$app/paths';
-    export let data;
+    let { data } = $props();
 </script>
 
 <svelte:head>

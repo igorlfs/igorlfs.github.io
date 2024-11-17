@@ -1,7 +1,7 @@
 <script lang="ts">
     import { formatDate } from '$lib/utils';
 
-    export let data;
+    let { data } = $props();
 </script>
 
 <svelte:head>
@@ -28,7 +28,7 @@
         </div>
 
         <div class="prose lg:prose-xl max-w-none">
-            <svelte:component this={data.content} />
+            <data.content />
         </div>
     </article>
 </div>
