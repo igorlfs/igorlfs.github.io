@@ -1,1 +1,0 @@
-import{d as s,a as t}from"./disclose-version.BRUD7_9Z.js";import{p as m,n,y as e,a as i}from"./runtime.DwBLvsdp.js";import{s as d}from"./snippet.DnET8x_I.js";import"./paths.qMRpisOS.js";function v(r,a){m(a,!0);var o=s(),p=n(o);d(p,()=>a.children??e),t(r,o),i()}export{v as M};
