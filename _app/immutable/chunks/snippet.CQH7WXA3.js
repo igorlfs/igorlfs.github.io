@@ -1,1 +1,0 @@
-import{b as o,E as f,y as i,e as p,u as c,h,m as d}from"./runtime.Bzhea_-H.js";function y(s,n,...t){var r=s,e=i,a;o(()=>{e!==(e=n())&&(a&&(c(a),a=null),a=p(()=>e(r,...t)))},f),h&&(r=d)}export{y as s};
