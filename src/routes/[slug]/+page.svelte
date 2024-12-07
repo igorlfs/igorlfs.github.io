@@ -1,7 +1,9 @@
 <script lang="ts">
+    import type { Post } from '$lib/types';
     import { formatDate } from '$lib/utils';
+    import type { Component } from 'svelte';
 
-    let { data } = $props();
+    let { data }: { data: { content: Component; meta: Post } } = $props();
 </script>
 
 <svelte:head>

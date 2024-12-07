@@ -1,10 +1,10 @@
 ---
 title: Building and Debugging C++ in Neovim
 description: A modern guide to debugging C++ in nvim
-date: "2024-05-19"
+date: '2024-05-19'
 categories:
-  - neovim
-  - software
+    - neovim
+    - software
 published: true
 ---
 Configuring neovim for C++ (and C) can be a bit tricky, especially when it comes to debugging. Fear not! This guide will cover everything you need to know, provided that you have some basic knowledge with plugin installation.
