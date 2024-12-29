@@ -37,12 +37,12 @@ Configuring `nvim-dap` is a little different than your average neovim lua plugin
 
 ```lua
 require("dap").adapters.codelldb = {
-	type = "server",
-	port = "${port}",
-	executable = {
-		command = "codelldb",
-		args = { "--port", "${port}" },
-	},
+ type = "server",
+ port = "${port}",
+ executable = {
+  command = "codelldb",
+  args = { "--port", "${port}" },
+ },
 }
 ```
 
