@@ -8,6 +8,8 @@ categories:
 published: true
 ---
 
+> **Guide assumes you're using neovim 0.11+**
+
 One of the main features of a terminal multiplexer is that they can spawn multiple "windows". Of course, a powerful multiplexer can offer much more, with detachable sessions and so on, but I would assume the most common use case for a multiplexer is plainly it's... "multiplexing" capability. If you're currently using a multiplexer mainly for this reason and you're a bit unhappy with your current setup, and if you also happen to be a neovim user, this guide was made specifically for you! Let's explore neovim's builtin functionalities to build a poor man's tmux!
 
 For as long as I've been using vim, I've been using its tab functionality. And honestly, I'm surprised with how often it's overlooked. Tabs in vim are slightly different from traditional tabs found in other programs: a tab can show *multiple* windows in any arrangement. When you launch vim with a file as an argument, you create a tab containing a single window. You can, then, manipulate the windows using commands such as `:split`, to split your screen horizontally, creating another "view" (window) for your current file. There are plenty of window commands to do the most common operations one would expect from a... window manager. You can read more about them with `:h CTRL-W`.
@@ -49,16 +51,12 @@ I'd argue neovim's builtin terminal also lacks some usability. The default exper
 vim.keymap.set("t", "<Esc>", [[<C-\\><C-n>]], { desc = "Exit Terminal" })
 ```
 
-There are some other quirks with `:terminal`. Namely, if you use any of the following options: `number`, `relativenumber`, `scrolloff` or `foldcolumn`, you might wanna disable them inside terminals. You can do that with an `autocmd`:
+There are some other quirks with `:terminal` (in spite of the [great improvement](https://github.com/neovim/neovim/pull/31443) with neovim 0.11). Namely, if you're using the `scrolloff` option, you might wanna disable it inside terminals. It behaves inconsistently between modes: it doesn't work inside terminal mode, and may cause undesired scrolling. You can disable it with an `autocmd`:
 
 ```lua
 vim.api.nvim_create_autocmd("Termopen", {
- desc = "Unclutter terminal",
  callback = function()
-  vim.wo.number = false
-  vim.wo.relativenumber = false
-  vim.wo.scrolloff = 0
-  vim.wo.foldcolumn = "0"
+  vim.wo[0][0].scrolloff = 0
  end,
 })
 ```
@@ -70,6 +68,8 @@ vim.keymap.set("n", "<C-w>e", "<CMD>term<CR>", { desc = "Terminal" })
 ```
 
 And now we're done with configuring the terminal! Now you can mix and match terminals, tabs and whatnot. Of course, you could have a "multiplexing experience" without leveraging the power of tabs (some do), since vim offers many ways to manipulate windows. But to me, the job is so much easier with tabs.
+
+Before we continue, there's another important limitation of neovim's terminal that you should be aware of: using the shell's builtin vi mode gets awkward. To the point where I prefer the default, emacs-like mode of [fish](https://fishshell.com/). To me, this isn't much of a big deal, but I can see how this would impact someone's workflow.
 
 Let's talk about some alternatives to using the builtin terminal that also aren't based on an actual multiplexer. For the longest time, I used to have a "floating terminal" plugin. A common option is [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim). Under the hood, these use the builtin terminal, but without the default cumbersomeness. But now that you know you can have a decent experience without a plugin (and also without having too much trouble), why bother with a plugin?
 
