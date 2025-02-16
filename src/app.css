@@ -1,10 +1,25 @@
-@import '@fontsource/roboto';
-@import '@fontsource/roboto/700.css';
-@import '@fontsource/iosevka';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@theme {
+    --color-*: initial;
+    --color-primary: #b4befe;
+    --color-accent: #89b4fa;
+    --color-text: #cdd6f4;
+    --color-subtext: #a6adc8;
+    --color-lavender: #b4befe;
+    --color-base: #1e1e2e;
+    --color-mantle: #181825;
+    --color-crust: #11111b;
+    --color-blue: #89b4fa;
+
+    --font-sans: Roboto;
+    --font-mono: Roboto Mono;
+}
 
 :root {
     --primary-color: #89b4fa;
