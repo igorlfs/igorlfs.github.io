@@ -1,0 +1,1 @@
+import{d as t,a as i}from"./C1O0Qi33.js";import{o as p}from"./T_Avok9V.js";import{s}from"./BhJoXFF_.js";import"./BAoKnnbY.js";function c(o,a){var r=t(),m=p(r);s(m,()=>a.children),i(o,r)}export{c as M};
