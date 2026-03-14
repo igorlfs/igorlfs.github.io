@@ -1,0 +1,1 @@
+function e(e,t=`medium`,n=`en`){let r=new Date(e.replaceAll(`-`,`/`));return new Intl.DateTimeFormat(n,{dateStyle:t}).format(r)}export{e as t};
