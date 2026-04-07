@@ -1,1 +1,0 @@
-import{P as e,b as t,k as n,p as r,u as i,x as a,y as o}from"./CxQVKLft.js";import{s}from"./CRgHFZXt.js";var c=a(`<img loading="lazy"/>`);function l(e,t){var r=c();n(()=>{i(r,`src`,s+t.src),i(r,`alt`,t.alt)}),o(e,r)}function u(n,i){var a=t();r(e(a),()=>i.children),o(n,a)}export{l as n,u as t};
